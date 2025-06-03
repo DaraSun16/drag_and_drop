@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and drop | Liste kanban</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="description" content="Faire glisser une tâche selon leur avancement.">
+</head>
+<body>
+  
+  <div class="board">
+    <h1>To Do List Drag and Drop</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Nouvelle tâche...">
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <div class="lanes">
+
+      <div class="swim-lane" id="todo-lane">
+        <h2 class="heading">A faire</h2>
+        <p class="task" draggable="true">Promener le chien</p>
+        <p class="task" draggable="true">Sortir les poubelles</p>
+        <p class="task" draggable="true">Apprendre le js</p>
+      </div>
+
+      <div class="swim-lane" id="todo-lane">
+        <h2 class="heading">En cours</h2>
+        <p class="task" draggable="true">Coder le Drag and Drop</p>
+      </div>
+
+      <div class="swim-lane" id="todo-lane">
+        <h2 class="heading">Fait</h2>
+        <p class="task" draggable="true">Manger le pot de nutella (oops...)</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/js.js"></script>
+  <script src="js/todo.js"></script>
+</body>
+</html>
